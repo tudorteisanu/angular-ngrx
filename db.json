@@ -1,0 +1,26 @@
+{
+  "books": [
+    {
+      "name": "asd",
+      "id": 1
+    },
+    {
+      "name": "asd",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": " raone",
+      "id": 1
+    },
+    {
+      "name": " raone",
+      "id": 2
+    },
+    {
+      "name": " raone",
+      "id": 3
+    }
+  ]
+}
