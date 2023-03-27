@@ -16,7 +16,7 @@ const reducer = createReducer(
   })),
   on(actionTypes.add, (state, { product }) => ({
     ...state,
-    [PRODUCTS_FEATURE_KEY]: [product, ...state[PRODUCTS_FEATURE_KEY]],
+    [PRODUCTS_FEATURE_KEY]: [...state[PRODUCTS_FEATURE_KEY], product],
   })),
   on(actionTypes.remove, (state, { id }) => ({
     ...state,

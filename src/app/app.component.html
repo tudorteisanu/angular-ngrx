@@ -6,14 +6,4 @@
     </li>
   </ul>
 </nav>
-<button (click)="showAlert()">showAlert</button>
 <router-outlet></router-outlet>
-<div>
-  {{state$ | async | json}}
-</div>
-<div>
-  <div *ngFor="let alert of alertItems$ | async">
-    {{alert.message}}
-    <button (click)="removeAlert(alert.id)">remove</button>
-  </div>
-</div>

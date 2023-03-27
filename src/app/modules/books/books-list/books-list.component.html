@@ -2,12 +2,6 @@
   <div>
     Books
   </div>
-  <div>
-    <input type="text" [(ngModel)]="name" />
-  </div>
-  <div>
-    <button (click)="create()">create</button>
-  </div>
 </div>
 <ul>
   <li *ngFor="let book of books$ | async">

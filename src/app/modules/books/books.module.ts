@@ -17,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    BooksListComponent
+    BooksListComponent,
   ],
   imports: [
     CommonModule,

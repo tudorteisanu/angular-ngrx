@@ -12,16 +12,10 @@ import * as productsActions from "../../products/store/products.actions";
 export class BooksListComponent {
   books$: Observable<any> = this.store.select((state: any) => state.books.books);
 
-  name: string = '';
-
   constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.store.dispatch(booksActions.loadAll());
-  }
-
-  create(): void {
-    this.store.dispatch(booksActions.process({ book: { name: this.name }}));
   }
 
   removeBook(id: number): void {
