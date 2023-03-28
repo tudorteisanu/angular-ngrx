@@ -9,6 +9,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {productsReducer} from "./store/products.reducer";
 import {CreateProductComponent} from "./create-product/create-product.component";
+import {FormComponentsModule} from "nanoit-angular-modules";
 
 const routes: Routes = [
   {
@@ -31,7 +32,8 @@ const routes: Routes = [
     StoreModule.forFeature(productsReducer),
     EffectsModule.forFeature([ProductsEffects]),
     RouterModule.forChild(routes),
-    FormsModule
+    FormsModule,
+    FormComponentsModule
   ]
 })
 export class ProductsModule { }

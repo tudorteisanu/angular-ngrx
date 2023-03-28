@@ -3,6 +3,7 @@
     <button routerLink="create">create</button>
   </div>
 </div>
+<FormInput></FormInput>
 <ul>
   <li *ngFor="let book of books$ | async">
     {{ book | json }}
